@@ -68,7 +68,6 @@ friedsIndexBMM = function(dataset, alpha_sterile = 1.0, beta_sterile = 1.0, alph
 		init[[i]] = initList
 	}
 	stanData <- list(eggs = dataset[, "NumEggs"], hatched = dataset[, "NumViable"], nRows = nrow(dataset), nCages = length(unique(dataset[, "Cage"])), cage = dataset[, "Cage"], p1_prior_alpha = alpha_sterile, p1_prior_beta = beta_sterile, p2_prior_alpha = alpha_wildtype, p2_prior_beta = beta_wildtype)
-	print(str(init))
 	fit <- rstan::stan(model_code = code, data = stanData, iter = iter, warmup = warmup, chains = numChains, control = control, init = init)
 	samples <- rstan::extract(fit, permuted = TRUE, inc_warmup = FALSE)
 	return(samples)
