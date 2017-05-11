@@ -33,7 +33,7 @@ samples <- friedsIndexBMM(dataset_multiRep)
 credibleIntervals(samples, wildToSterileRatio = 1) 
 ```
 
-If you examine the dataset <code>dataset_multiRep<\code> in the above, you will see that that experiment consisted of a number of replicate cages.  The method also works for experiments where one larger cage experiment is run (for example in large semi-field cages).  To see this try the example:
+If you examine the dataset <code>dataset_multiRep</code> in the above, you will see that that experiment consisted of a number of replicate cages.  The method also works for experiments where one larger cage experiment is run (for example in large semi-field cages).  To see this try the example:
 
 ```
 library(friedsIndex)
