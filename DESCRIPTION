@@ -1,0 +1,11 @@
+Package: friedsIndex
+Title: A package for the analysis of mating competition experiments in insects
+Version: 0.666
+Authors@R: person("Dan", "Pagendam", email = "dan.pagendam@csiro.au", role = c("aut", "cre"))
+Description: This package performs Bayesian inference on experimental data from mixed mating cage experiments, used to quantify Fried's index and the hatch rates of compatible and incompatible mating types.  The approach is based on the study published in XXXXXX that uses a two-component binomial mixture model implemented in the rstan package for R.  This package provides a function for running the analysis with stan and a function for generating summary statistics, credible intervals and posterior plots.
+Depends: R (>= 3.2.3)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
+Imports: rstan
