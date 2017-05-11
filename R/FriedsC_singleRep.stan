@@ -22,8 +22,8 @@ data {
 		pi_s ~ beta(1,1);
 
     	for (ii in 1:nRows) {
-    		log_den[1] <- log(pi_global) + binomial_log(hatched[ii], eggs[ii], p[1]);
-    		log_den[2] <- log(1 - pi_global) + binomial_log(hatched[ii], eggs[ii], p[2]);
+    		log_den[1] = log(pi_global) + binomial_log(hatched[ii], eggs[ii], p[1]);
+    		log_den[2] = log(1 - pi_global) + binomial_log(hatched[ii], eggs[ii], p[2]);
     		increment_log_prob(log_sum_exp(log_den));
     	}
     }
