@@ -1,6 +1,6 @@
 ## friedsIndex
 
-### Statistical Analysis of Insect Mating Competitiveness Experiments
+## Statistical Analysis of Insect Mating Competitiveness Experiments
 **Authors**: Dan Pagendam, Wen-Hsi Yang
 
 friedsIndex is an R package providing an improved method of calculating Fried's index from insect mating competitiveness experiments.
@@ -9,7 +9,7 @@ The new statistical approach is based on a Bayesian statistical analysis of a tw
 
 In addition to estimating posterior distributions for Fried's index, the method also provides the posterior distributions for the hatch rates from wildtype and sterile matings.  The outputs of the method can be used to construct Bayesian Credible Intervals for these parameters, which provides a degree of confidence or certainty about these estimated parameters.
 
-## Package installation
+### Package installation
 
 To install the package from GitHub, you will first need to install the devtools package in R using the command:
 
@@ -22,7 +22,7 @@ library(devtools)
 install_github("dpagendam/friedsIndex")
 ```
 
-## Using this package
+### Using this package
 
 To use friedsIndex with some of the packaged example data, try:
 
