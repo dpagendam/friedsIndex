@@ -20,7 +20,7 @@ data {
 
     model {
         real log_den[2]; // temp for log component densities
-    	alpha ~ cauchy(0.0, 1.0);
+    	alpha ~ exponential(0.001);
       	p[1] ~ beta(p1_prior_alpha, p1_prior_beta);
       	p[2] ~ beta(p2_prior_alpha, p2_prior_beta);
       	pi_global ~ beta(1.0,1.0);
