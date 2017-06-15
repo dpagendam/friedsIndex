@@ -3,11 +3,12 @@
 \docType{data}
 \name{dataset_multiRep}
 \alias{dataset_multiRep}
-\title{\code{dataset_multiRep} is a dataset (matrix) containing synthetic, example data to demostrate the format that a data matrix should take when multiple (i.e. replicated) mixed mating cage experiments were used.
-Each row  of the matrix contains data for each female recoeverd from a mating cage.  The three columns are: (i) "Cage" which contains an integer indicating which replicate cage the female came from; (ii) "NumEggs" which is the number of eggs laid by each female; and (iii) "NumViable" which is the number of eggs that hatched or produced viable offspring.}
+\title{\code{dataset_multiRep} is a dataset (matrix) containing synthetic, example data to demostrate the format that a data matrix should take when multiple (i.e. replicated) mixed mating cage experiments were used.}
 \description{
 \code{dataset_multiRep} is a dataset (matrix) containing synthetic, example data to demostrate the format that a data matrix should take when multiple (i.e. replicated) mixed mating cage experiments were used.
-Each row  of the matrix contains data for each female recoeverd from a mating cage.  The three columns are: (i) "Cage" which contains an integer indicating which replicate cage the female came from; (ii) "NumEggs" which is the number of eggs laid by each female; and (iii) "NumViable" which is the number of eggs that hatched or produced viable offspring.
+}
+\details{
+Each row  of the matrix contains data for each female recovered from a mating cage.  The three columns are: (i) "Cage" which contains an integer indicating which replicate cage the female came from; (ii) "NumEggs" which is the number of eggs laid by each female; and (iii) "NumViable" which is the number of eggs that hatched or produced viable offspring.
 }
 \author{
 Dan Pagendam \email{dan.pagendam@csiro.au}

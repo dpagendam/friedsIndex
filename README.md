@@ -5,9 +5,9 @@
 
 friedsIndex is an R package providing an improved method of calculating Fried's index from insect mating competitiveness experiments.
 
-The new statistical approach is based on a Bayesian statistical analysis of a two-component binomial mixture model and uses only cages containing wildtype females, wildtype males and sterilised males (i.e. mixed mating cages).  This is in contrast to the traditional experimental design used for calculating Fried's index which, in addition to mixed mating cages, requires control cages that have incompatible types (sterile males with wildtype females) and compatible types (wildtype males and females).
+The new approach is based on a two-component binomial mixture model in the Bayesian framework and uses only mixed mating cages containing wildtype females, wildtype males and sterilised males.  Our approach departs from the traditional experimental design used for calculating Fried's index where, in addition to mixed mating cages, incompatible mating and compatible mating control cages are necessary.  The new approach is statistically efficient, meaning that precise estimates of Frieds index can be obtained with fewer replicate cages than under the traditional approach.  This makes the new approach cost-effective in terms of the experimental time and cost.
 
-In addition to estimating posterior distributions for Fried's index, the method also provides the posterior distributions for the hatch rates from wildtype and sterile matings.  The outputs of the method can be used to construct Bayesian Credible Intervals for these parameters, which provides a degree of confidence or certainty about these estimated parameters.
+In addition to estimating posterior distributions for Fried's index, the method also provides the posterior distributions for the hatch rates from wildtype and sterile matings.  The outputs of the method can be used to construct Bayesian credible intervals for these parameters, which provides a degree of confidence or certainty about these estimated parameters.
 
 ### Package installation
 

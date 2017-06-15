@@ -3,8 +3,9 @@
 #' @description \code{credibleIntervals} provides credible intervals and posterior density plots for: (i) the hatch probabilities (hatch rates) under sterile male mating; (ii) the hatch probabilities (hatch rates) under wildtype male mating; (iii) the proportion of matings that were between wildtye females and sterilised males; and (iv) Fried's index.
 #' @param \code{samples} is a list obtained as the output from running the function \code{friedsIndexBMM}.
 #' @param \code{wildToSterileRatio} is a numeric value that gives the ratio of wildtype to sterile males used in the cage experiments.  It is assumed that all cages used the same ratio.  The default value is 1.0, which corresponds to equal numbers of wildtype to sterile males. 
-#' @param \code{quantiles} are the quantiles that the sure would like summarised to the terminal window from the posterior samples.  By default this is \code{quantiles = c(0.025, 0.25, 0.5, 0.75, 0.975)} which can be used to obtain the median, inter-quartile range and the 95% credible interval.
-#' @return The function generates a plot and prints posterior summary information in the form of credible intervals to the terminal window.  The function returns NULL.
+#' @param \code{quantiles} are the quantiles that the sure would like summarised to the terminal window from the posterior samples.  By default this is \code{quantiles = c(0.025, 0.25, 0.5, 0.75, 0.975)} which can be used to obtain the median and credible intervals.
+#' @details The function generates a plot and prints posterior summary information in the form of credible intervals to the terminal window.
+#' @return The function returns NULL.
 #' @examples 
 #' data(dataset_multiRep)
 #' samples <- friedsIndexBMM(dataset_multiRep)

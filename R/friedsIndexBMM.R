@@ -60,7 +60,8 @@ friedsIndexBMM = function(dataset, alpha_sterile = 1.0, beta_sterile = 1.0, alph
 
 	friedsInit = (length(ind1) + 0.001)/(length(ind2) + 0.001)
 	
-
+	#p is the vector of hatch rates from the two clusters.
+	#pi_s is the probability of sterile mating
 	initList = list(p = centers, pi_s = rep(friedsInit, length(unique(dataset[, "Cage"]))), alpha = 1.0, pi_global = 0.5)
 	init = list()
 	for(i in 1:numChains)
