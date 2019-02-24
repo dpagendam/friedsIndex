@@ -85,7 +85,7 @@ credibleIntervals = function(samples, wildToSterileRatio = 1, col = "blue", quan
 	cat("\n")
 	cat("Mean: "); cat(mean(samples_pi_global)); cat("\n")
 	cat("-----------------------------------\n")
-	cat("Quantiles and Mean for  Proportion of Sterile/Incompatible Mated Females\n")
+	cat("Quantiles and Mean for  Frieds Index\n")
 	q = quantile(samples_frieds, quantiles)
 	cat("\n")
 	cat("Percentile \t \t Estimate \n")
