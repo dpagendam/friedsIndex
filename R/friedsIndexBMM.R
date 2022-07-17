@@ -58,7 +58,7 @@ friedsIndexBMM = function(dataset, alpha_sterile = 1.0, beta_sterile = 1.0, alph
 		ind2 = which(km$cluster == 1)
 	}
 
-	friedsInit = (length(ind1) + 0.001)/(length(ind2) + 0.001)
+	friedsInit = (length(ind1) + 0.001)/(length(ind2) + length(ind1) + 0.001)
 	
 	#p is the vector of hatch rates from the two clusters.
 	#pi_s is the probability of sterile mating
